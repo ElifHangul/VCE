@@ -3,5 +3,4 @@
 - A new person who joined the same room, gets the chat history of the room.
 
 
-
-![Screenshot](1.png)      ![Screenshot](2.png)      ![Screenshot](3.png)
+![Screenshot](1.png)      ![Screenshot](2.png)     ![Screenshot](3.png)
