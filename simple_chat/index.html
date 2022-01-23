@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		
+    <title>EVC Chat</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class = "header">
+        <div class = "msg-header">
+            <div class = "msg-header-img">
+                <img src="avatar.png">
+            </div>
+            <div class="active">
+                <h4 id="myName"></h4>
+            </div>
+			<button id="log" onclick="document.getElementById('id01').style.display='block'"
+			class="w3-button">Login</button>
+			</div>
+        </div>
+		
+		<!-- The Modal -->
+			<div id="id01" class="w3-modal">
+			  <div class="w3-modal-content">
+				<div class="w3-container">
+				  <span onclick="document.getElementById('id01').style.display='none'"
+				  class="w3-button w3-display-topright">&times;</span>
+				  <br>
+				  <div class="modalcontainer">
+					
+					  <label>User Name</label>
+					  <br>
+					  <input type = "text" id="user_name"/>
+					  <br><br>
+					  <label>Room Name</label>
+					  <br>
+					  <input type = "text" id="room_name"/>
+					  <br><br>
+					  <button id="loginbutton">Sign In</button>
+					  <br><br>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="row" id="content-row">
+				<div class="col-2" id="activeUsers">
+				<p>Hello</p>
+				</div>
+				<div class="col-10">
+					<div class="chat-page">
+						<div class="msg-inbox">
+							<div class="chats">
+								<div class="msg-page" id="chat">
+
+								</div>
+							</div>
+							</div>
+						
+							<div class="msg-bottom">
+								<div class="input-group">
+									<button id="emoji-button"><font face="Arial">&#x1f604;</font></button>
+									<input id="chatinput" class="form-control" name="chat" placeholder="type your message...">
+									<button class = "input-group-text" id="sendbutton"><i class = "fa fa-paper-plane"></i></button>
+								</div>
+						</div>
+				
+				</div>	
+				</div>
+			</div>
+        
+    </div>
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/emoji-button@latest/dist/index.min.js"></script>
+<script type="text/javascript" src="sillyclient.js"></script>
+<script type="text/javascript" src="code.js"></script>
+
+</body>
+</html>
